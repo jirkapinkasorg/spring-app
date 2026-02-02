@@ -12,7 +12,7 @@ public class RestBackendController {
 
     public RestBackendController(RestClient.Builder restClientBuilder) {
         this.restClient = restClientBuilder
-                .baseUrl("http://backend-rest.dev")
+                .baseUrl("http://backend-rest-dev")
                 .build();
     }
 

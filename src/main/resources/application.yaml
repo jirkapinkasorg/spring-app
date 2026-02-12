@@ -3,6 +3,9 @@ management:
     web:
       exposure:
         include: "*"
+spring:
+  kafka:
+    bootstrap-servers: my-cluster-kafka-bootstrap.kafka:9092
 app:
   data:
     default data from application yaml

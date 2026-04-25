@@ -6,3 +6,8 @@ management:
 app:
   data:
     default data from application yaml
+spring:
+  cache:
+    type: hazelcast
+  kafka:
+    bootstrap-servers: my-cluster-kafka-bootstrap.kafka:9092

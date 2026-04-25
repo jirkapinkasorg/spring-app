@@ -21,6 +21,7 @@ USER spring:spring
 
 # Expose port (change if your app uses a different port)
 EXPOSE 8080
+EXPOSE 5701
 
 # Run the application
 ENTRYPOINT ["java", "-javaagent:/opt/opentelemetry-javaagent.jar", "-jar", "app.jar"]

@@ -1,0 +1,12 @@
+hazelcast:
+  cluster-name: spring-app-test
+  network:
+    join:
+      auto-detection:
+        enabled: false
+      multicast:
+        enabled: false
+      tcp-ip:
+        enabled: false
+      kubernetes:
+        enabled: false

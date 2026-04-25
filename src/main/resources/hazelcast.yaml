@@ -1,0 +1,31 @@
+hazelcast:
+  cluster-name: spring-app
+  network:
+    join:
+      auto-detection:
+        enabled: false
+      multicast:
+        enabled: false
+      kubernetes:
+        enabled: true
+        # <service-name>.<namespace>.svc.cluster.local
+        service-dns: my-app-dev-hazelcast.dev.svc.cluster.local
+# TEST LOKALNIHO BEHU BEZ KUBERNETES:
+#  network:
+#    join:
+#      auto-detection:
+#        enabled: false
+#      multicast:
+#        enabled: true
+#      tcp-ip:
+#        enabled: false
+#      kubernetes:
+#        enabled: false
+  map:
+    persons:
+      time-to-live-seconds: 600
+      backup-count: 1
+      eviction:
+        eviction-policy: LRU
+        max-size-policy: USED_HEAP_SIZE
+        size: 250

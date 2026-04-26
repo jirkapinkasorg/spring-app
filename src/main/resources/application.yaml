@@ -11,3 +11,10 @@ spring:
     type: hazelcast
   kafka:
     bootstrap-servers: my-cluster-kafka-bootstrap.kafka:9092
+
+logging:
+  level:
+    com:
+      hazelcast:
+        system:
+          logo: OFF

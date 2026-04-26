@@ -2,6 +2,7 @@ package com.example.spring_app;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.Instant;
 
 public class Person implements Serializable {
 
@@ -11,6 +12,8 @@ public class Person implements Serializable {
     private String firstName;
 
     private String lastName;
+
+    private Instant dt;
 
     public Person() {
     }
@@ -36,4 +39,11 @@ public class Person implements Serializable {
         this.lastName = lastName;
     }
 
+    public Instant getDt() {
+        return dt;
+    }
+
+    public void setDt(Instant dt) {
+        this.dt = dt;
+    }
 }

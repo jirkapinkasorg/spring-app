@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+
 @Service
 public class MyService {
 
@@ -14,6 +16,7 @@ public class MyService {
     public Person getPerson() {
         log.info("Called getPerson");
         Person person = new Person("Jirka", "Pinkas");
+        person.setDt(Instant.now());
         return person;
     }
 

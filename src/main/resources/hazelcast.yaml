@@ -23,7 +23,7 @@ hazelcast:
 #        enabled: false
   map:
     persons:
-      time-to-live-seconds: 600
+      time-to-live-seconds: 3600 # 1 hour
       backup-count: 1
       eviction:
         eviction-policy: LRU
